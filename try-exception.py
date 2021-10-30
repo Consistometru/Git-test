@@ -1,4 +1,4 @@
-print("salut")
+print("salutare")
 from operator import pow, truediv, mul, add, sub, floordiv, mod
 w = 0
 operators = {
