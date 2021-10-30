@@ -7,7 +7,7 @@ operators = {
   '*': mul,
   '/': truediv,
   '^': pow,
-  '//': floordiv,
+  '#': floordiv,
   '%': mod
 }
 
@@ -22,7 +22,7 @@ if w:
      file = open("history.txt", "w")
 input1 = input("continuati? da // nu: ")
 while input1 == "da":
-    calc = input("Type calculation: (+,-,*,/,//,^,%) \n")
+    calc = input("Type calculation: (+,-,*,/,#,^,%) \n")
     print("Answer: " + str(calculate(calc)))
     if w:
          file.write(calc + " Answer: " + str(calculate(calc)))
