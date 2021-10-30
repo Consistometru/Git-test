@@ -20,12 +20,12 @@ def calculate(s):
             return operators[operator](calculate(left), calculate(right))
 if w:
      file = open("history.txt", "w")
-input1 = input("continuati? da / nu: ")
+input1 = input("continuati? da // nu: ")
 while input1 == "da":
     calc = input("Type calculation:\n")
     print("Answer: " + str(calculate(calc)))
     if w:
          file.write(calc + " Answer: " + str(calculate(calc)))
-    input1 = input("continuati? da / nu: ")
+    input1 = input("continuati? da // nu: ")
 if w:
      file.close()
